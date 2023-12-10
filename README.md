@@ -1,5 +1,9 @@
 Welcome to the AirBnB clone project!
+
+THIS PROJECT IS A TEAM PROJECT BY DANIEL NTOW AND JOEJO TURKSON
+
 Before starting, please read the AirBnB concept page.
+
 
 First step: Write a command interpreter to manage your AirBnB objects.
 
