@@ -47,7 +47,8 @@ class FileStorage:
                 data = json.load(file)
                 for key, value in data.items():
                     class_name, obj_id = key.split('.')
-                    # Create an instance from the dictionary representation and add to __objects
+                    # Create an instance from the dictionary
+                    # representation and add to __objects
                     # Explicitly import the class based on its name
                     class_module = globals().get(class_name)
                     if class_module:
