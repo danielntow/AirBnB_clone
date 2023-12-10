@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-console.py - HBNBCommand class definition
+console.py - HBNBCommand class definition.
 """
 
 import cmd
@@ -36,7 +36,7 @@ def parse_arguments(arg):
 
 class HBNBCommand(cmd.Cmd):
     """
-    HBNBCommand class - command interpreter
+    HBNBCommand class - command interpreter.
     """
     prompt = "(hbnb) "
     valid_classes = {
@@ -48,7 +48,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def default(self, arg):
-        """Default behavior for cmd module when input is invalid"""
+        """Default behavior for cmd module when input is invalid."""
         command_dict = {
             "all": self.do_all,
             "show": self.do_show,
