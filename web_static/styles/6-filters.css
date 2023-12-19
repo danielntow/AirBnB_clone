@@ -1,0 +1,147 @@
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: auto;
+
+  }
+
+  .locations *,
+  .amenities * {
+    margin: 0; /* Reset margin for all elements */
+    padding: 0; /* Reset padding for all elements */
+    display: grid;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 20px;
+
+
+    /* grid-column: span 1; */
+    /* margin: auto 20px; */
+
+
+
+  }
+
+  .amenities{
+
+
+  }
+  .locations{
+    border-right: #DDDDDD 1px solid;
+    /* overflow: hidden; */
+  }
+
+.locations h3,
+.amenities h3,
+.locations h4,
+.amenities h4 {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+  .locations,
+  .amenities {
+    grid-column: span 1;
+    box-sizing: border-box;
+    /* margin-left: 20px; */
+
+
+  }
+
+
+
+
+
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+    padding: 0;
+    margin-top: 20px;
+    padding-left: 20px;
+
+
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.popover,
+.popover1 ,
+.popover2
+{
+  width: 100%;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  padding-top: 20px;
+  box-sizing: border-box;
+  padding-left:0 ;
+  margin-left: 0;
+  margin-top: 13px;
+  display: none;
+  position: absolute;
+  margin-left: 0;
+  padding-bottom: 20px;
+}
+
+
+/* .popover > li h2{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+} */
+
+
+
+
+
+/* .popover1,
+.popover2 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  padding-top: 20px;
+  box-sizing: border-box;
+} */
+
+.locations {
+  position: relative; /* Ensure the popover is relative to this section */
+}
+
+/* Show specific popover when hovering */
+.filters .locations:hover .popover1 {
+  display: block; /* Show popover1 when hovering over locations */
+}
+
+.amenities {
+  position: relative;
+}
+
+/* Show specific popover when hovering */
+.amenities:hover .popover2 {
+  display: block; /* Show popover2 when hovering over amenities */
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.popover h2, .popover1 h2 , .popover2 h2{
+  font-size: 16px;
+}
