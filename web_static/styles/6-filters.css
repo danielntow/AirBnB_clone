@@ -94,6 +94,7 @@
   position: absolute;
   margin-left: 0;
   padding-bottom: 20px;
+  z-index: 100;
 }
 
 
@@ -144,4 +145,23 @@ ul {
 
 .popover h2, .popover1 h2 , .popover2 h2{
   font-size: 16px;
+}
+
+
+@media(max-width: 550px)
+{
+  .filters{
+
+    grid-template-columns: 2fr , 1fr;
+  }
+
+  .locations
+  {
+    grid-column: span 2;
+    /* box-sizing: border-box; */
+
+
+
+  }
+
 }
